@@ -1,6 +1,3 @@
-# SMARTHEALTHCARD
-
-```markdown
 # 🏥 Digital Health Card System
 
 A smart, QR-based medical data system designed for **quick access to essential health information**—built using **Python (Flask)** and **PostgreSQL**, deployed via **Render**. This project bridges the gap between healthcare and digital accessibility, enabling users to securely store and retrieve patient records in real-time.
@@ -9,7 +6,7 @@ A smart, QR-based medical data system designed for **quick access to essential h
 
 ## 🚨 Problem Statement
 
-In critical situations, **delays in accessing a patient’s medical information** can result in improper care or life-threatening decisions. Traditional health records are paper-based, fragmented, or inaccessible when most needed. 
+In critical situations, **delays in accessing a patient’s medical information** can result in improper care or life-threatening decisions. Traditional health records are paper-based, fragmented, or inaccessible when most needed.
 
 This project solves that by:
 - 📱 Generating a **Digital Health Card** with a QR code.
@@ -52,37 +49,15 @@ This project solves that by:
 ---
 
 ## 🏗️ System Architecture
-
-```
-
 User ➝ Flask Form ➝ PostgreSQL ➝ QR Generation ➝ QR Code Output
+↓
+QR Scan
+↓
+/display/<card_id> ➝ Fetch & Render Details
 
-```
-                       ↓
-                     QR Scan
-                       ↓
-        /display/<card_id> ➝ Fetch & Render Details
-```
-
-```
 
 ---
 
-## 🗂 Folder Structure
-
-```
-
-DIGITALHEALTHCARD/
-├── app.py                  # Main Flask backend
-├── templates/              # HTML Templates
-│   ├── index.html
-│   ├── qr.html
-│   └── display.html
-├── static/qr\_codes/        # Saved QR images
-├── requirements.txt        # Python dependencies
-├── Procfile                # Render deployment
-
-```
 
 ---
 
@@ -139,7 +114,9 @@ The **Digital Health Card System** offers a **reliable and scalable solution** t
 ---
 
 > 📌 Built with a vision to combine **data + devices = impact.**
-```
 
-Author 
-Vishwanath kulal
+---
+
+### 👨‍💻 Author
+
+**Vishwanath Kulal**
